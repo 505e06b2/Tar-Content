@@ -1,0 +1,4 @@
+*.geany
+*.sh
+*.py
+raw_content/*
