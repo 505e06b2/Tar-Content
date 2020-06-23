@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Tar Content</title>
+		<script src="js/untar.js"></script>
+		<script src="js/pako_inflate.min.js"></script>
+		<script src="js/gapless_audio.js"></script>
+		<script src="js/stdlib.js"></script>
+		<script src="js/window.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="manifest" href="manifest.webmanifest">
+	</head>
+	<body>
+		<div class="container">
+			<div id="content"></div>
+			<div id="selection">
+				<div onclick="page_content.clear()" style="background: #880000">STOP</div>
+				<div class="header"><input id="gain_control" type="range" min="0" max="1" step="0.01" value="0.2" title="Audio Gain" oninput="stdlib.audio.gain.set(this.value)"></div>
+				<div class="header"><input id="rate_control" type="number" min="50" max="150" step="5" value="100" title="Audio Rate (%)" onchange="stdlib.setPlaybackRate(this.value)"></div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "Tar Content",
+  "short_name": "Tar Content",
+  "display": "standalone",
+  "background_color": "#222",
+  "description": "The SWF alternative for HTML5",
+  "orientation": "landscape",
+  "start_url": "."
+}
